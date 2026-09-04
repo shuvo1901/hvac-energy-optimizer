@@ -1,10 +1,11 @@
 # Python
 __pycache__/
 *.py[cod]
+.pytest_cache/
 .venv/ venv/ .env
-# data / results (large artifacts stay local)
+# data (large regenerable artifact stays local; regenerate via scripts/generate_synthetic_data.py)
 data/*.csv
-results/
+# keep results/ tracked (demo.png, metrics.json, final paper PDF)
 # notebooks
 .ipynb_checkpoints/
 # packaging
