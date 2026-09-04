@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/ venv/ .env
+# data / results (large artifacts stay local)
+data/*.csv
+results/
+# notebooks
+.ipynb_checkpoints/
+# packaging
+*.egg-info/ dist/ build/
+# OS
+.DS_Store
+Thumbs.db
