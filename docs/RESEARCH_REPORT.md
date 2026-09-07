@@ -1,6 +1,6 @@
 # Physics-Informed Machine Learning for HVAC Energy Optimization: Forecasting, Supply-Air-Temperature Reset, and Chiller Sequencing
 
-**Author:** Sabbir Hossain
+**Author:** Md. Sabbir Hossain
 **Date:** September 2026
 **Code & data (local):** `D:\Python research project` — `src/hvac_optimizer/`, `examples/run_demo.py`, `notebooks/01_hvac_energy_study.ipynb`
 **Climate:** Hot-humid, Dhaka-like (synthetic BMS data, 2000 m² commercial building)

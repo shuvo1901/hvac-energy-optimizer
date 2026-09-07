@@ -3,9 +3,10 @@ title: HVAC Energy Optimizer — Physics-Informed ML for HVAC Energy Optimizatio
 message: If you use this software, please cite it as below.
 authors:
   - family-names: Hossain
-    given-names: Sabbir
+    given-names: Md. Sabbir
+    email: Shuvo.Hossain101@gmail.com
 version: 0.1.0
 date-released: 2026-09-04
 license: MIT
-repository-code: https://github.com/shuvo1901/Sabbir-Hossain
+repository-code: https://github.com/shuvo1901/hvac-energy-optimizer
 keywords: [hvac, energy-optimization, forecasting, mpc, ashrae]

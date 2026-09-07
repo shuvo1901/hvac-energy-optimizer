@@ -1,10 +1,10 @@
 # HVAC Energy Optimizer — Physics-Informed ML for HVAC Systems
 
-[![CI](https://github.com/shuvo1901/Sabbir-Hossain/actions/workflows/ci.yml/badge.svg)](https://github.com/shuvo1901/Sabbir-Hossain/actions)
+[![CI](https://github.com/shuvo1901/hvac-energy-optimizer/actions/workflows/ci.yml/badge.svg)](https://github.com/shuvo1901/hvac-energy-optimizer/actions)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-By **Sabbir Hossain** · research-grade Python project
+By **Md. Sabbir Hossain** · research-grade Python project
 
 Forecast cooling load with gradient boosting, then cut energy with
 supply-air-temperature reset, chiller sequencing, and look-ahead pre-cooling —
@@ -79,11 +79,11 @@ results/              metrics.json, demo.png, IEEE_PES_HVAC_Paper.pdf
 
 ```bibtex
 @software{hossain2026hvac,
-  author  = {Sabbir Hossain},
+  author  = {Md. Sabbir Hossain},
   title   = {HVAC Energy Optimizer: Physics-Informed ML for HVAC Energy Optimization},
   version = {0.1.0},
   year    = {2026},
-  url     = {https://github.com/shuvo1901/Sabbir-Hossain}
+  url     = {https://github.com/shuvo1901/hvac-energy-optimizer}
 }
 ```
 

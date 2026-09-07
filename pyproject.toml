@@ -9,7 +9,7 @@ description = "Physics-informed ML for HVAC energy optimization: forecasting, SA
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "Sabbir Hossain" }]
+authors = [{ name = "Md. Sabbir Hossain" }]
 keywords = ["hvac", "energy", "forecasting", "mpc", "building", "ashrae"]
 classifiers = [
   "Programming Language :: Python :: 3",

@@ -10,7 +10,7 @@ from reportlab.lib import colors
 
 proj = Path(r"D:\Python research project")
 demo = proj / "results" / "demo.png"
-out = proj / "results" / "IEEE_PES_HVAC_Paper_v2.pdf"
+out = proj / "results" / "IEEE_PES_HVAC_Paper.pdf"
 
 W, H = letter
 ML, MR, MT, MB = 48, 48, 42, 50
@@ -28,7 +28,7 @@ def hdr(canv, doc):
     canv.restoreState()
 
 doc = BaseDocTemplate(str(out), pagesize=letter, leftMargin=ML, rightMargin=MR, topMargin=MT, bottomMargin=MB,
-                      title="Grid-Interactive HVAC - PES", author="Sabbir Hossain")
+                      title="Grid-Interactive HVAC - PES", author="Md. Sabbir Hossain")
 
 title_frame = Frame(ML, H-MT-TITLE_H, FW, TITLE_H, id="title", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=6)
 col1_first = Frame(ML, MB, COLW, H-MT-TITLE_H-MB-8, id="c1f", leftPadding=0, rightPadding=4, topPadding=0, bottomPadding=0)
@@ -54,7 +54,7 @@ sBull = ParagraphStyle("bull", parent=sBody, leftIndent=12, firstLineIndent=0, b
 story = []
 story.append(Paragraph("Grid-Interactive HVAC Load Forecasting and Supervisory Control for Peak Reduction in Hot-Humid Commercial Buildings", sTitle))
 story.append(Spacer(1, 4))
-story.append(Paragraph("Sabbir Hossain<br/>Independent Researcher, Dhaka, Bangladesh<br/>sabbir.hossain.research@example.com &nbsp;|&nbsp; Track: AI in Power Grid Operation / Energy Management", sAuth))
+story.append(Paragraph("Md. Sabbir Hossain<br/>Independent Researcher, Dhaka, Bangladesh<br/>Shuvo.Hossain101@gmail.com &nbsp;|&nbsp; Track: AI in Power Grid Operation / Energy Management", sAuth))
 story.append(Spacer(1, 4))
 story.append(Paragraph("<b><i>Abstract</i></b><i>—Commercial HVAC drives 40-60% of building electricity and a disproportionate share of distribution peaks in hot-humid grids. We present a grid-interactive, physics-informed pipeline coupling ASHRAE psychrometrics and a 2R2C zone model with a gradient-boosting hourly cooling-load forecaster and supervisory control (supply-air-temperature reset, minimum-chiller sequencing, look-ahead pre-cooling). On a 2000 m<sup>2</sup> office synthetic dataset (8760 h, Dhaka-like, 42.2 kW mean, 143.4 kW max), forecasting reaches MAE 1.55 kW, RMSE 2.76 kW, R<sup>2</sup> 0.9907, CVRMSE 8.30%, NMBE 2.29% (60-day test), satisfying ASHRAE Guideline 14 (30%/10%). SAT reset cuts energy 11.11% (13.97% annual, 26,757 kWh/yr, \$3,211/yr at \$0.12/kWh, 16.1 tCO<sub>2</sub>/yr) and peak 58.5 to 54.4 kW (7.0%); sequencing saves 24.49% energy and cuts peak to 44.0 kW (24.8%). The 168-h lag dominates (45.8%), enabling day-ahead flexible-load bidding. The 7-module package runs in &lt;1 min (5/5 tests pass).</i>", sAbs))
 story.append(Paragraph("<b><i>Index Terms</i></b><i>—Building energy management, HVAC, load forecasting, demand response, peak reduction, chiller sequencing, ASHRAE Guideline 14.</i>", sAbs))
@@ -130,4 +130,4 @@ doc.build(story)
 import shutil
 print(f"Saved {out} ({out.stat().st_size/1024:.0f} KB)")
 shutil.copy(out, r"D:\\IEEE_PES_HVAC_Paper_v4.pdf")
-print("Copied to D:\\IEEE_PES_HVAC_Paper_v2.pdf")
+print("Copied to D:\\IEEE_PES_HVAC_Paper.pdf")

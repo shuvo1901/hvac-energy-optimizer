@@ -1,6 +1,6 @@
 # Grid-Interactive HVAC Load Forecasting and Supervisory Control for Peak Reduction in Hot-Humid Commercial Buildings
 
-**Sabbir Hossain** — Independent Researcher, Dhaka, Bangladesh — sabbir.hossain.research@example.com
+**Md. Sabbir Hossain** — Independent Researcher, Dhaka, Bangladesh — Shuvo.Hossain101@gmail.com
 *Target: IEEE PES General Meeting (5-page conference paper, PES Authors Kit) — Track: Applications of AI in the Power and Energy Industry / Energy Management*
 
 **Abstract—** Commercial HVAC drives 40-60% of building electricity and a disproportionate share of distribution peaks in hot-humid grids. This paper presents a grid-interactive, physics-informed pipeline that couples ASHRAE psychrometrics and a 2R2C zone model with a gradient-boosting hourly cooling-load forecaster and supervisory control (supply-air-temperature reset, minimum-chiller sequencing, look-ahead pre-cooling). On a 2000 m2 office synthetic dataset (8760 h, Dhaka-like climate, 42.2 kW mean), forecasting reaches MAE 1.55 kW, RMSE 2.76 kW, R2 0.9907, CVRMSE 8.30%, NMBE 2.29% (60-day test), satisfying ASHRAE Guideline 14 (30%/10%). SAT reset cuts HVAC energy 11.11% (13.97% annual) and shaves weekly peaks; optimal sequencing saves 24.49% vs all-chillers-on. The 168-h load lag dominates importance (45.8%), enabling day-ahead bidding of flexible load. The 7-module open package runs in <1 min on a laptop (5/5 tests pass) and exposes hourly flexibility signals directly usable by distribution management and demand-response aggregators.

@@ -1,7 +1,7 @@
 # Physics-Informed Machine Learning for HVAC Energy Optimization: Load Forecasting with Supervisory Reset and Sequencing Control
 
-**Sabbir Hossain**
-*Independent Researcher — Dhaka, Bangladesh | sabbir.hossain.research@example.com*
+**Md. Sabbir Hossain**
+*Independent Researcher — Dhaka, Bangladesh | Shuvo.Hossain101@gmail.com*
 
 **Abstract—** HVAC systems account for 40-60% of commercial building electricity in hot-humid climates, yet most operate on fixed setpoints that waste part-load and mild-hour efficiency. We present a laptop-reproducible, physics-informed pipeline that unifies (i) ASHRAE psychrometrics and a 2R2C zone model, (ii) a gradient-boosting hourly cooling-load forecaster, and (iii) supervisory control via supply-air-temperature (SAT) reset, minimum-chiller sequencing, and look-ahead pre-cooling. Evaluated on synthetic BMS data for a 2000 m2 office in a Dhaka-like climate (8760 h, mean load 42.2 kW), the forecaster achieves MAE 1.55 kW, RMSE 2.76 kW, R2 0.9907, CVRMSE 8.30% and NMBE 2.29% on a 60-day test, satisfying ASHRAE Guideline 14 hourly limits (30%/10%). SAT reset reduces HVAC electricity by 11.11% on the test slice (13.97% full-year); optimal sequencing saves 24.49% versus an all-chillers-committed baseline. Feature analysis shows weekly history (168-h lag, 45.8%) dominates occupancy and outdoor temperature, motivating schedule-aware control. The package (7 modules, 5/5 pytest passing) runs in under one minute without GPU.
 

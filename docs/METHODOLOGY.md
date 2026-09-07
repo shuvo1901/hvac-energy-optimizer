@@ -1,6 +1,6 @@
 # Methodology
 
-Author: **Sabbir Hossain**
+Author: **Md. Sabbir Hossain**
 
 This project studies HVAC energy optimization for a 2000 m² commercial
 building using a physics-informed ML pipeline.
